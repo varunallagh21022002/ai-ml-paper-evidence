@@ -1,0 +1,29 @@
+{
+  "dataset": "Banking77 compact 10-class subset",
+  "noise": "one deterministic deletion plus vowel removal",
+  "threshold": 0.0603357829807725,
+  "kept_noisy": 661,
+  "results": [
+    {
+      "condition": "clean baseline",
+      "accuracy": 0.95,
+      "macro_f1": 0.950371,
+      "n_train": 1017,
+      "n_test": 400
+    },
+    {
+      "condition": "all deterministic noisy additions",
+      "accuracy": 0.9575,
+      "macro_f1": 0.95797,
+      "n_train": 2034,
+      "n_test": 400
+    },
+    {
+      "condition": "similarity-filtered noisy additions",
+      "accuracy": 0.9575,
+      "macro_f1": 0.957773,
+      "n_train": 1678,
+      "n_test": 400
+    }
+  ]
+}

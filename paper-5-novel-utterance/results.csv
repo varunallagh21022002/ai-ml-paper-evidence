@@ -1,0 +1,17 @@
+problem,encoder,method,train_size,average_precision
+General,MiniLM,Original,8,0.7356996076242697
+General,TF-IDF,Original,8,0.47104311181767444
+General,MiniLM,LLM only,38,0.7579566564613422
+General,TF-IDF,LLM only,38,0.5117677757078842
+General,MiniLM,Word2Vec only,32,0.7325449489643965
+General,TF-IDF,Word2Vec only,32,0.47783926241158425
+General,MiniLM,LLM + Word2Vec,83,0.7501789991937802
+General,TF-IDF,LLM + Word2Vec,83,0.5154920909035502
+General + financial,MiniLM,Original,13,0.7134098177189981
+General + financial,TF-IDF,Original,13,0.5664455915236082
+General + financial,MiniLM,LLM only,63,0.713020644491969
+General + financial,TF-IDF,LLM only,63,0.5878538237317599
+General + financial,MiniLM,Word2Vec only,51,0.6923735991963388
+General + financial,TF-IDF,Word2Vec only,51,0.5698060775959581
+General + financial,MiniLM,LLM + Word2Vec,148,0.6964049215964456
+General + financial,TF-IDF,LLM + Word2Vec,148,0.5903319498495139

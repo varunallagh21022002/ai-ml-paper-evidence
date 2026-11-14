@@ -1,0 +1,29 @@
+{
+  "dataset": "Banking77 compact 10-class subset",
+  "augmentation": "deterministic lexical substitutions",
+  "margin_threshold": 0.02,
+  "kept_augmented": 819,
+  "results": [
+    {
+      "condition": "original training",
+      "accuracy": 0.95,
+      "macro_f1": 0.950371,
+      "n_train": 1017,
+      "n_test": 400
+    },
+    {
+      "condition": "all lexical augmentations",
+      "accuracy": 0.9525,
+      "macro_f1": 0.952806,
+      "n_train": 2034,
+      "n_test": 400
+    },
+    {
+      "condition": "margin-filtered augmentations",
+      "accuracy": 0.9425,
+      "macro_f1": 0.942836,
+      "n_train": 1836,
+      "n_test": 400
+    }
+  ]
+}
