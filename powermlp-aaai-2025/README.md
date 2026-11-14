@@ -6,7 +6,7 @@
 **Notebook:** [GitHub](powermlp_adaptation.ipynb) · [Colab](https://colab.research.google.com/github/varunallagh21022002/ai-ml-paper-evidence/blob/main/powermlp-aaai-2025/powermlp_adaptation.ipynb)
 
 ## Status
-**Executed locally with saved `results.json`, but not a reproduction.** The notebook implements the published adapted layer formula `z = α b(x) + ReLU_k(Wx + γ)`, with `b(x)=x/(1+e^-x)` and a final affine layer, then compares it with a small ReLU MLP on a deterministic one-dimensional regression function.
+**Executed locally after a gradient-correctness fix, with saved `results.json`, but not a reproduction.** The notebook implements the published adapted layer formula `z = α b(x) + ReLU_k(Wx + γ)`, with `b(x)=x/(1+e^-x)` and a final affine layer. Its forward pass uses `b(x)` and its analytic backpropagation includes the SiLU derivative; central finite differences check all parameters and inputs before training. It compares the result with a two-hidden-layer ReLU MLP on a deterministic one-dimensional regression function.
 
 ## Reproduction
 Run all cells in Colab. No private data or credentials are required; the notebook generates its synthetic data and writes held-out RMSE, MAE, and fit time to `results.json`.

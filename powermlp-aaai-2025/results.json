@@ -2,20 +2,21 @@
   "task": "deterministic one-dimensional regression",
   "formula": "z = alpha*b(x) + ReLU_k(Wx + gamma), b(x)=x/(1+exp(-x)), k=2; final layer affine",
   "seed": 42,
+  "gradient_check": "central finite differences for all parameters and inputs before training",
   "results": [
     {
-      "condition": "one-hidden-layer ReLU MLP",
+      "condition": "two-hidden-layer ReLU MLP",
       "rmse": 0.113506,
       "mae": 0.065012,
-      "fit_seconds": 0.203723,
+      "fit_seconds": 0.056834,
       "n_train": 450,
       "n_test": 150
     },
     {
-      "condition": "published-formula PowerMLP adaptation",
-      "rmse": 0.163741,
-      "mae": 0.117244,
-      "fit_seconds": 2.5377,
+      "condition": "corrected published-formula PowerMLP adaptation",
+      "rmse": 0.334455,
+      "mae": 0.292966,
+      "fit_seconds": 0.767327,
       "n_train": 450,
       "n_test": 150
     }
